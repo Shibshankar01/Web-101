@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(20, 186, 192);
+        }
+        #main_container{
+            padding: 30px 30px 30px 30px;
+            width: 20%;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #text-box{
+            width: 90%;
+            height: 40px;
+            margin: auto;
+            margin-bottom: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .container{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .cards{
+            width: 23%;
+            margin: auto;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        *{
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        #main_container>.container>.cards:last-child{
+            background-color: black;
+            color: white;
+        }
+        #main_container>.container:last-child>.cards:first-child{
+            background-color: red;
+            color: white;
+        }
+        #main_container>.container:last-child>.cards:nth-child(3){
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="main_container">
+        <div id="text-box"></div>
+        <div class="container">
+            <div class="cards">1</div>
+            <div class="cards">2</div>
+            <div class="cards">3</div>
+            <div class="cards">+</div>
+        </div>
+        <div class="container">
+            <div class="cards">4</div>
+            <div class="cards">5</div>
+            <div class="cards">6</div>
+            <div class="cards">-</div>
+        </div>
+        <div class="container">
+            <div class="cards">7</div>
+            <div class="cards">8</div>
+            <div class="cards">9</div>
+            <div class="cards">X</div>
+        </div>
+        <div class="container">
+            <div class="cards">C</div>
+            <div class="cards">0</div>
+            <div class="cards">=</div>
+            <div class="cards">/</div>
+        </div>
+    </div>
+</body>
+</html>
