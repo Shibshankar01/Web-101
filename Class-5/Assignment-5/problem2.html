@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav-bar {
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        }
+
+        #nav-bar>div:first-child {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #BF50E7;
+            color: white;
+        }
+
+        #nav-bar>div:last-child {
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-weight: bolder;
+        }
+
+        #nav-bar>div:last-child>p:first-child {
+            color: #5C91FC;
+        }
+
+        #main_container {
+            width: 90%;
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #main_container>div {
+            width: 40%;
+        }
+
+        #first_container>div>img {
+            width: 40%;
+            height: 70px;
+        }
+        #first_container>div{
+            display: flex;
+            width: 80%;
+        }
+        #first_container>p:first-child{
+            color: #7AA6FD;
+            font-weight: bolder;
+        }
+        #second_container>div:first-child{
+            display: flex;
+            justify-content: space-around;
+            /* padding: 20px; */
+        }
+        #second_container>div:last-child{
+            display: flex;
+            justify-content: space-around;
+            /* padding: 20px; */
+        }
+        #second_container>div>div{
+            width: 43%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #second_container>div>div>img{
+            height: 40px;
+            width: 25%;
+            margin-top: 10px;
+        }
+        #second_container>div>div>*{
+            padding-left: 10px;
+        }
+        #second_container>div>div>img+h3{
+            margin-top: 5px;
+        }
+        #second_container>div>div>img+h3+p{
+            margin-top: -10px;
+        }
+        #second_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="nav-bar">
+        <div>
+            <h2>StudyLab</h2>
+        </div>
+        <div>
+            <p>Home</p>
+            <p>About</p>
+            <p>Course</p>
+            <p>Instructor</p>
+            <p>Blog</p>
+            <p>Contact</p>
+        </div>
+    </div>
+
+    <div id="main_container">
+        <div id="first_container">
+            <p>WELCOME TO STUDYLAB</p>
+            <h1>We Are StudyLab An Online Learning Center</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit commodi, ut at placeat ipsum ad! Impedit
+                soluta omnis doloremque fuga doloribus. Cumque, quod quas nostrum numquam maiores recusandae. Facere,
+                corporis?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, blanditiis. Sequi accusantium distinctio
+                ut maiores accusamus cupiditate dolor quos itaque recusandae sapiente. Labore laudantium nulla obcaecati
+                quod. Doloribus, odio corporis.</p>
+            <div>
+                <img src="data:image/png;base64,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"
+                    alt="error">
+                <h3>Learn anything from StudyLab, Watch Video</h3>
+            </div>
+        </div>
+        <div id="second_container">
+            <div>
+                <div>
+                    <img src="data:image/jpeg;base64,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" alt="error">
+                    <h3>Top Quality Content</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="data:image/jpeg;base64,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" alt="error">
+                    <h3>Highly Skilled Instructor</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="data:image/jpeg;base64,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" alt="error">
+                    <h3>World Class Quiz</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="data:image/jpeg;base64,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" alt="error">
+                    <h3>Get Certified</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
