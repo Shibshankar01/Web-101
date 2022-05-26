@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px 400px;
+            grid-template-areas: 
+            "nav nav"
+            "b1 b2";
+            gap: 10px 30px;
+        }
+        #container>div{
+            padding: 10px;
+        }
+        #container>div:nth-child(1){
+            grid-area: nav;
+            background-color: yellow;
+            font-size: 30px;
+        }
+        #container>div:nth-child(2){
+            grid-area: b1;
+            background-color: red;
+        }
+        #container>div:nth-child(3){
+            grid-area: b2;
+            background-color: #00FF2A;
+        }
+
+        @media all and (min-width: 320px) and (max-width: 480px){
+            #container{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 100px 200px 200px;
+                grid-template-areas: 
+                "nav"
+                "b1"
+                "b2";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>Navigation</div>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX</div>
+    </div>
+</body>
+</html>
